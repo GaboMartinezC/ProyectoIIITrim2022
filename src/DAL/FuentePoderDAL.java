@@ -6,7 +6,7 @@ import java.io.*;
 public class FuentePoderDAL 
 {
     private static ArrayList<FuentePoder> listaFuentePoder = new ArrayList<FuentePoder>();
-    private String ruta = "/home/gabriel/FichProyecto/FuentePoder.bin";
+    private String ruta ="/var/FichProyecto/FuentePoder.bin";
     
     public ArrayList<FuentePoder> BuscarFuentePoder (String descripcion) throws Exception
     {

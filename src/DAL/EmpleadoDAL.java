@@ -6,7 +6,7 @@ import java.io.*;
 public class EmpleadoDAL 
 {
     private static ArrayList<Empleado> listaEmpleado = new ArrayList<Empleado>();
-    String ruta="/home/gabriel/FichProyecto/Empleado.bin";
+    private String ruta ="/var/FichProyecto/Empleado.bin";
     
     public Empleado BuscarEmpleado (String cedulaEmpleado) throws Exception
     {

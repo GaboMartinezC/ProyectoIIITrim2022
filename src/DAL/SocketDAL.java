@@ -6,7 +6,7 @@ import java.io.*;
 public class SocketDAL 
 {
     private static ArrayList<Socket> listaSocket = new ArrayList<Socket>();
-    private String ruta = "/home/gabriel/FichProyecto/Socket.bin";
+    private String ruta ="/var/FichProyecto/Socket.bin";
     
     public ArrayList<Socket> BuscarSocket (String descripcion) throws Exception
     {

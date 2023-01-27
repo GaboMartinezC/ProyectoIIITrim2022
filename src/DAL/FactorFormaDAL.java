@@ -6,7 +6,7 @@ import java.io.*;
 public class FactorFormaDAL 
 {
     private static ArrayList<FactorForma> listaFactorForma = new ArrayList<FactorForma>();
-    private String ruta = "/home/gabriel/FichProyecto/FactorForma.bin";
+    private String ruta ="/var/FichProyecto/FactorForma.bin";
     
     public ArrayList<FactorForma> BuscarFactorForma (String descripcion) throws Exception
     {

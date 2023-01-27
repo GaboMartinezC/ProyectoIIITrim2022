@@ -6,7 +6,7 @@ import java.io.*;
 public class CaseDAL 
 {
     private static ArrayList<Case> listaCase = new ArrayList<Case>();
-    private String ruta = "/home/gabriel/FichProyecto/Case.bin";
+    private String ruta ="/var/FichProyecto/Case.bin";
     
     public ArrayList<Case> BuscarCase (String descripcion) throws Exception
     {

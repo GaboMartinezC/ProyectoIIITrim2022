@@ -6,7 +6,8 @@ import java.io.*;
 public class AlmacenamientoDAL 
 {
     private static ArrayList<Almacenamiento> listaAlmacenamiento = new ArrayList<Almacenamiento>();
-    private String ruta="/home/gabriel/FichProyecto/Almacenamiento.bin";
+    private final static String rutaDir = "/var/FichProyecto";
+    private String ruta ="/var/FichProyecto/Almacenamiento.bin";
     
     public ArrayList<Almacenamiento> BuscarAlmacenamiento (String descripcion) throws Exception
     {
@@ -74,14 +75,19 @@ public class AlmacenamientoDAL
     }
     private void Leer() throws Exception
     {
+        File fich = new File(rutaDir);
         File archivo = new File(ruta);
-        if (!archivo.exists())
+        if (fich.mkdirs())
         {
-            ObjectOutputStream escribiendoArchivo = new ObjectOutputStream (new FileOutputStream(ruta));
-            archivo.createNewFile();
-            escribiendoArchivo.writeObject(listaAlmacenamiento);
-            escribiendoArchivo.close();
+            if (!archivo.exists())
+            {
+                ObjectOutputStream escribiendoArchivo = new ObjectOutputStream (new FileOutputStream(ruta));
+                archivo.createNewFile();
+                escribiendoArchivo.writeObject(listaAlmacenamiento);
+                escribiendoArchivo.close();
+            }    
         }
+        
         ObjectInputStream leyendoArchivo = new ObjectInputStream (new FileInputStream(ruta));
         listaAlmacenamiento = (ArrayList<Almacenamiento>) leyendoArchivo.readObject();
         leyendoArchivo.close();

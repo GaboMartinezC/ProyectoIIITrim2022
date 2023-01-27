@@ -6,7 +6,7 @@ import java.io.*;
 public class ClienteDAL 
 {
     private static ArrayList<Cliente> listaCliente = new ArrayList<Cliente>();
-    private String ruta = "/home/gabriel/FichProyecto/Cliente.bin";
+    private String ruta ="/var/FichProyecto/Cliente.bin";
     
     public Cliente BuscarCliente (String cedulaCliente) throws Exception
     {

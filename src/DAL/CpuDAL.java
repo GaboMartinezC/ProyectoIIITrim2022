@@ -6,7 +6,7 @@ import java.io.*;
 public class CpuDAL 
 {
     private static ArrayList<CPU> listaCpu = new ArrayList<CPU>();
-    String ruta = "/home/gabriel/FichProyecto/CPU.bin";
+    private String ruta ="/var/FichProyecto/CPU.bin";
     
     public ArrayList<CPU> BuscarCPU (String descripcion) throws Exception
     {

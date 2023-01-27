@@ -6,7 +6,7 @@ import java.io.*;
 public class GpuDAL 
 {
     private static ArrayList<GPU> listaGpu = new ArrayList<GPU>();
-    private String ruta = "/home/gabriel/FichProyecto/GPU.bin";
+    private String ruta ="/var/FichProyecto/GPU.bin";    
     
     public ArrayList<GPU> BuscarGPU (String descripcion) throws Exception
     {

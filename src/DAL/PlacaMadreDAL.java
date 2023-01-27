@@ -6,7 +6,7 @@ import java.io.*;
 public class PlacaMadreDAL 
 {
     private static ArrayList<PlacaMadre> listaPlacaMadre = new ArrayList<PlacaMadre>();
-    private String ruta = "/home/gabriel/FichProyecto/PlacaMadre.bin";
+    private String ruta ="/var/FichProyecto/PlacaMadre.bin";
     
     public ArrayList<PlacaMadre> BuscarPlacaMadre (String descripcion) throws Exception
     {

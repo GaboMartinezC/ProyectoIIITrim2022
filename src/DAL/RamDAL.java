@@ -6,7 +6,7 @@ import java.io.*;
 public class RamDAL 
 {
     private static ArrayList<RAM> listaRam = new ArrayList<RAM>();
-    private String ruta = "/home/gabriel/FichProyecto/RAM.bin";
+    private String ruta ="/var/FichProyecto/RAM.bin";
     
     public ArrayList<RAM> BuscarRAM (String descripcion) throws Exception
     {

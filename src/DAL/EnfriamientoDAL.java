@@ -6,7 +6,7 @@ import java.io.*;
 public class EnfriamientoDAL 
 {
     private static ArrayList<Enfriamiento> listaSisEnfriamiento = new ArrayList<Enfriamiento>();
-    private String ruta = "/home/gabriel/FichProyecto/Enfriamiento.bin";
+    private String ruta ="/var/FichProyecto/Enfriamiento.bin";
     
     public ArrayList<Enfriamiento> BuscarEnfriamiento (String descripcion) throws Exception
     {

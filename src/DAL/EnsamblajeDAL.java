@@ -6,7 +6,7 @@ import java.io.*;
 public class EnsamblajeDAL 
 {
     private static ArrayList<Ensamblaje> listaEnsamblaje = new ArrayList<Ensamblaje>();
-    private String ruta = "/home/gabriel/FichProyecto/Ensamblaje.bin";
+    private String ruta ="/var/FichProyecto/Ensamblaje.bin";
     
     public void RealizarPedido(Ensamblaje ensamblaje) throws Exception
     {

@@ -6,7 +6,7 @@ import java.io.*;
 public class DetallesEnsamblaje 
 {
     private static ArrayList<Detalles> listaDetallesEnsamblaje = new ArrayList<Detalles>();
-    private String ruta = "/home/gabriel/FichProyecto/DetallesEnsamblaje.bin";
+    private String ruta ="/var/FichProyecto/DetallesEnsamblaje.bin";
 
     private boolean VerificarAlimentacion (Detalles detalles) throws Exception
     {
